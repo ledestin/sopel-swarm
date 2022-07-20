@@ -1,0 +1,10 @@
+#!/bin/bash
+
+set -e
+
+stack=sopel
+
+docker pull sopelirc/sopel:latest
+# Sometimes necessary:
+# docker stack rm "$stack"
+docker stack deploy --compose-file docker-compose.yml "$stack"

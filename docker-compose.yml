@@ -1,0 +1,6 @@
+version: "3.3"
+services:
+  sopel:
+    image: sopelirc/sopel
+    volumes:
+      - /home/debian/work/sopel/.sopel:/home/sopel/.sopel
